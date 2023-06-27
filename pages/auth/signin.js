@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie';
 import http from 'http';
 import styles from '@/styles/auth.module.css';
-import Alert from '@/components/global/Alert';
+
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 

@@ -20,3 +20,17 @@ body{
     --global-color: rgb(255, 166, 0);
     --global-btn-bg: rgb(255, 166, 0);
 }
+
+input:focus {
+    outline: none;
+  }
+
+
+select:focus{
+    outline: none;
+}
+
+
+button:focus{
+    outline: none;
+}
