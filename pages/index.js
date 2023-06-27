@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <div className={styles.index_cover}>
-        <video /* autoPlay */ muted className={styles.background_video} >
+        <video autoPlay muted className={styles.background_video} >
           <source src='/videos/videoplayback.webm' />
         </video>
         <div className={styles.video_overlay}></div>

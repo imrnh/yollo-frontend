@@ -28,7 +28,7 @@
 }
 
 .auth_form {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .auth_form input {
@@ -42,11 +42,6 @@
     padding-left: 10px;
 }
 
-.checkbox {
-    width: 6px;
-    height: 6px;
-}
-
 .remember_me_sec {
     width: 200px;
     display: flex;
@@ -54,7 +49,7 @@
 }
 
 .remember_me_sec p {
-    margin-top: 13px;
+    margin-top: 27px;
     margin-left: 7px;
 }
 
@@ -82,4 +77,10 @@
     margin-top: 40px;
     align-self: center;
     margin-bottom: 50px;
+}
+
+.error_message{
+    width: 100%;
+    height: 30px;
+    color: red;
 }
