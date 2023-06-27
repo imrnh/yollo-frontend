@@ -1,0 +1,120 @@
+.index_cover{
+    width: 99vw;
+    height: 90vh;
+    background-color: gainsboro;
+}
+
+.background_video{
+    width: 100vw;
+    margin-top: -140px;
+    position: absolute;
+}
+
+.video_overlay{
+    width: 100vw;
+    height: 90vh;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+
+.index_conver_contents{
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_signin{
+    width: calc(100% - 200px);
+    height: 100px;
+    background-color: transparent;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 10;
+}
+
+.logo_signin img{
+    max-width: 150px;
+    height: 40px;
+}
+
+.lsi_navbar{
+    display: flex;
+    flex-direction: row;
+}
+.lsi_navbar ul{
+    display: flex;
+    list-style: none;
+}
+.lsi_navbar ul li{
+    width: 100px;
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.lsi_navbar button{
+    width: 100px;
+    height: 39px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--global-btn-bg);
+    cursor: pointer;
+}
+
+.index_conver_contents h1{
+    font-size: 55px;
+}
+
+
+.index_conver_contents h3{
+    margin-top: 40px;
+}
+
+.input_form{
+    width: 650px;
+    height: 49px;
+    margin-top: 80px;
+}
+
+.landing_input{
+    width: 400px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.landing_submit_btn{
+    width: 160px;
+    height: 48px;
+    background-color: var(--global-btn-bg);
+    border: 1px solid var(--global-btn-bg);
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.already_have_an_acc{
+    margin-top: 20px;
+    font-size: 11px;
+}
