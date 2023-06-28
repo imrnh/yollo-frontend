@@ -16,11 +16,13 @@ export default function Home() {
     }, []);
 
     return (
-        <main>
+        <main className={styles.home}>
             <Header />
 
             <div className={styles.featured_movie}>
-
+                <video className={styles.featured_movie_banner}  muted>
+                    <source src="/videos/videoplayback.webm" />
+                </video>
             </div>
         </main>
     );

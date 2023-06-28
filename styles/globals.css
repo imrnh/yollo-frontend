@@ -3,22 +3,27 @@
 
 * {
     margin: 0;
-    color: white;
     font-family: 'Inter', sans-serif;
 }
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
-body{
-    background-color: black;
+select{
+    cursor: pointer;
 }
+
 
 :root {
-    --global-bg: black;
-    --global-color: rgb(255, 166, 0);
-    --global-btn-bg: rgb(255, 166, 0);
+    --global-bg: white;
+    --global-color: /* rgb(255, 166, 0) */;
+    --global-btn-bg: rgb(196, 196, 255); /* rgb(255, 166, 0) */;
+}
+
+button{
+    cursor: pointer;
 }
 
 input:focus {
