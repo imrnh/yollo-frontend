@@ -1,13 +1,25 @@
 import styles from '@/styles/navbar.module.css';
+import Router, { useRouter } from 'next/router'
+
+
 
 export default function Header() {
+    const router = new useRouter();
+    const handleSearchSubmit = event => {
+        event.preventDefault();
+        var search_query = event.target[0].value;
+        var path = "/home/search/" + search_query;
+        router.push(path);
+    }
+
+
     return <main className={styles.navbar}>
         <img className={styles.logo} src="/logo.png" />
 
         <div className={styles.nav_middle}>
-            <div style={{backgroundColor: "black"}} className={styles.search_bar}>
-                <form action="" method="">
-                    <input type='text' placeholder='Quick Search' name="Searchbar" />
+            <div style={{ backgroundColor: "black" }} className={styles.search_bar}>
+                <form method='POST' onSubmit={handleSearchSubmit}>
+                    <input type='text' placeholder='Quick Search' name="searchbar" required />
                     <button type='submit'>Search</button>
                 </form>
             </div>

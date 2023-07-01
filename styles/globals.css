@@ -22,7 +22,7 @@ select{
     --global-bg: rgb(12, 12, 12);
     --global-color: white; /* rgb(255, 166, 0) */;
     --global-btn-bg: rgb(196, 196, 255); /* rgb(255, 166, 0) */;
-    --global-display-width: 99.2vw;
+    --global-display-width: 100%;
 }
 
 button{

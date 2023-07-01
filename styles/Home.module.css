@@ -117,7 +117,7 @@
     margin-top: 10px;
     margin-left: 15px;
     margin-right: 15px;
-    background-image: url("https://images.pexels.com/photos/2103864/pexels-photo-2103864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* background-image: url("https://images.pexels.com/photos/2103864/pexels-photo-2103864.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
     background-size: cover;
     border-radius: 1px;
 }
@@ -152,8 +152,8 @@
 }
 
 .movie_card_rating_count img{
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
 
 .movie_card_play_buttn{
@@ -166,7 +166,13 @@
     border-radius: 2px;
 }
 
-.movie_card_title{
+.movie_card_genre_names{
+    margin-top: 20px;
+}
+
+.movie_card_rating_count{
+    margin-top: 25px;
+    font-size: 15px;
 }
 
 .movie_card_description{
@@ -186,9 +192,13 @@
     height: 20px;
 }
 
+.movie_card_title
+{
+    font-size: 23px;
+}
 
 .movie_card_play_button_wrapper{
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 15px;
 }

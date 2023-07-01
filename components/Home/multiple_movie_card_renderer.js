@@ -23,11 +23,6 @@ export default function MultipleMovieCardRenderer({ title, count }) {
     return (
         <div className={styles.multiple_move_card_rendere_wrapper}>
             <h1>{title}</h1> <br />
-
-            {top_picks_movies.forEach(el => {
-                console.log(el)
-            })}
-
             <div className={styles.top_picks_movie_card_holder}>
                 {Array.isArray(top_picks_movies) ?
                     top_picks_movies.map((element) => (
