@@ -1,0 +1,136 @@
+.admin_wrapper{
+    width: var(--global-display-width);
+    min-height: 100vh;
+    display: flex;
+}
+
+.admin_sidebar_wrapper{
+    width: 300px;
+    height: 100;
+    background-color: rgb(0, 0, 0);
+}
+
+.sidebar_sub_comp{
+    width: 230px;
+    height: auto;
+    margin-top: 80px;
+    padding-left: 20px;
+}
+
+.admin_logout_buttn{
+    width: 100px;
+    height: 40px;
+    background-color: brown;
+    border: 0;
+    margin-top: 10px;
+    margin-left: 180px;
+}
+
+.sidebar_sub_comp_name{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 22px;
+    font-weight: bold;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.sidebar_button_div{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.sidebar_button_div a{
+    margin-top: 10px;
+}
+
+
+
+/******
+
+        ---  Upload Movie
+***/
+
+.pctrl_genre_selector_div {
+    margin-top: 40px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.genre_selector_child {
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
+    color: gray;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.genre_selector_child p{
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+.text_pass {
+    width: 400px;
+    height: 53px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border: 0;
+    border-radius: 6px;
+    color: black;
+ 
+}
+
+.input_details {
+    color: gray;
+    font-size: 12px;
+    float: left;
+    margin-top: 8px;
+}
+
+.form_group {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 45px;
+    font-weight: 100;
+}
+.form_group h4{
+    font-weight: 400;
+    color: gray;
+}
+
+.pctrl_control_submit_button{
+    width: 200px;
+    height: 40px;
+    background-color: var(--global-btn-bg);
+    border: 0;
+    color: black;
+    font-size: 15px;
+    margin-top: 24px;
+}
+
+.movie_upload_form{
+    width: 1000px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin-left: 150px;
+    padding-bottom: 100px;
+    color: gray;
+    font-weight: 100;
+}
+
+.movie_upload_form h1{
+    margin-top: 100px;
+}

@@ -20,6 +20,23 @@ export default function Home() {
     const router = useRouter();
 
 
+    const addMovieToWatchLater = (movie_id, movie_title) => {
+        var path = "/home/addmovietowatchlater";
+        var data = {
+            movieid: movie_id
+        }
+
+        postRequest(data, path).then(() => {
+            //alert that data added successfully
+            alert(movie_title + " added to watch later.")
+        }).catch(error => {
+            //alert error
+            console.log("Error adding movie: " + error)
+            alert("Error: " + error)
+        })
+    }
+
+
     useEffect(() => {
         if (!Cookies.get('token') || Cookies.get('role') == 2) {
             router.push('/auth/signin');
@@ -52,14 +69,14 @@ export default function Home() {
             <main className={styles.home}>
 
 
-                <div className={styles.featured_movie}>
-                    <video className={styles.featured_movie_banner} muted>
-                        <source src="/videos/videoplayback.webm" />
-                    </video>
+                <div className={styles.featured_movie} style={{ backgroundImage: `url('${featured_movie?.movie?.banner_url}')` }}>
+
+                    {/* <source src="/videos/videoplayback.webm" />
+                    </video> */}
 
                     <div className={styles.featured_overlay}></div>
                     <div className={styles.featured_movie_content}>
-
+                        <h1>{featured_movie?.movie?.title ?? 'NA'}</h1> <br />
                         <p className={styles.featured_movie_desc}>{featured_movie?.movie?.description ?? 'No description available'}</p>
 
                         <div className={styles.featued_movie_info}>
@@ -77,6 +94,15 @@ export default function Home() {
                                     <a href={`home/movies?genre=${genre.id}`}>{genre.name},</a>
                                 </p>
                             ))}
+
+                        </div>
+
+                        <div className={styles.featured_movie_buttns}>
+                            <a href={`/home/watch?slug=WALL-E7M1SI5NCHV`}><div className={styles.featured_movie_play_btn}>Play</div></a>
+
+                            <button onClick={() => addMovieToWatchLater(featured_movie?.id, featured_movie?.movie?.title)} className={styles.featured_movie_watch_later_button} type='submit'>
+                                <img src='/icons/favourite.png' title='Add to watch later' />
+                            </button>
                         </div>
                     </div>
                 </div>
