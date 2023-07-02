@@ -18,7 +18,7 @@ export default function AdminSidebar() {
             <p className={styles.sidebar_sub_comp_name}>Movie/TV Show</p>
             <div className={styles.sidebar_button_div}>
                 <a href="/admin/upload-movie">Add movie/tv-show</a> <br /><br />
-                <a href="">View all movie/tv-show</a> <br />
+                <a href="/admin/view/movies">View all movie/tv-show</a> <br />
             </div>
         </div>
 
@@ -26,7 +26,7 @@ export default function AdminSidebar() {
             <div className={styles.sidebar_sub_comp_name}>Genre</div>
             <div className={styles.sidebar_button_div}>
                 <a href="/admin/upload-genre">Add a new genre</a> <br /><br />
-                <a href="">View all genres</a> <br />
+                <a href="/admin/view-genres">View all genres</a> <br />
             </div>
         </div>
 
@@ -34,7 +34,7 @@ export default function AdminSidebar() {
             <p className={styles.sidebar_sub_comp_name}>Publisher</p>
             <div className={styles.sidebar_button_div}>
                 <a href="/admin/upload-publisher">Add a new publisher</a> <br /><br />
-                <a href="">View all publishers</a> 
+                <a href="/admin/view-pub">View all publishers</a> 
             </div>
         </div>
 

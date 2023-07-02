@@ -134,3 +134,124 @@
 .movie_upload_form h1{
     margin-top: 100px;
 }
+
+
+/*********
+
+    List view
+
+
+
+    ******/
+
+.list_view_wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+}
+
+
+.list_view_header{
+    width: 62%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    font-size: 20px;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 70px;
+}
+
+.list_view_header p:nth-child(1){
+    width: 100px;
+    border-right: 1px solid gray;
+}
+
+.list_view_header p:nth-child(3){
+    width: 200px;
+    border-left: 1px solid gray;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.list_view_content{
+    width: 62%;
+    height: auto;
+    /* display: flex; */
+    font-size: 20px;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.edit_button{
+    width: 70px;
+    height: 29px;
+    background-color: rgb(223, 223, 223);
+    border: 0;
+    color: #000;
+    font-size: 16px;
+}
+
+.update_button{
+    width: 70px;
+    height: 29px;
+    background-color: rgb(45, 155, 22);
+    border: 0;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.delete_button{
+    width: 70px;
+    height: 29px;
+    background-color: brown;
+    border: 0;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.option_pane{
+    display: flex;
+    align-items: center;
+}
+
+.list_view_form{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border-top: 1px solid rgb(56, 56, 56);
+    border-bottom: 1px solid rgb(56, 56, 56); */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.list_view_form input:nth-child(1){
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    color: rgb(83, 83, 83);
+    font-size: 20px;
+}
+
+.list_view_content input:nth-child(2){
+    width: 300px;
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: white;
+}

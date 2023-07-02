@@ -25,7 +25,11 @@ export default function getRequest(path) {
       });
 
       res.on('end', () => {
-        resolve(JSON.parse(responseData));
+        try{
+          resolve(JSON.parse(responseData));
+        }catch(error){
+          reject(error);
+        }
       });
     });
 

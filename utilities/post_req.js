@@ -27,8 +27,13 @@ const postRequest = async (data, path) => {
       });
 
       res.on('end', () => {
-        const response = JSON.parse(responseData);
-        resolve(response);
+        try {
+          const response = JSON.parse(responseData);
+          resolve(response);
+        } catch (error) {
+          reject(error);
+        }
+
       });
     });
 
