@@ -54,6 +54,8 @@ export default function Home() {
             .then((responseData) => { setFeaturedRatingCount(responseData) })
             .catch((error) => { console.log("Error: " + error) })
 
+
+        //genre id to genre name.
         postRequest({ id: [1, 78, 80] }, '/home/genreidtoname')
             .then((responseData) => { setFeaturedMovieGenrs(responseData); })
             .catch((error) => { console.log("Error: " + error) })
@@ -98,7 +100,7 @@ export default function Home() {
                         </div>
 
                         <div className={styles.featured_movie_buttns}>
-                            <a href={`/home/watch?slug=WALL-E7M1SI5NCHV`}><div className={styles.featured_movie_play_btn}>Play</div></a>
+                            <a href={`/home/watch/WALL-E7M1SI5NCHV`}><div className={styles.featured_movie_play_btn}>Play</div></a>
 
                             <button onClick={() => addMovieToWatchLater(featured_movie?.id, featured_movie?.movie?.title)} className={styles.featured_movie_watch_later_button} type='submit'>
                                 <img src='/icons/favourite.png' title='Add to watch later' />

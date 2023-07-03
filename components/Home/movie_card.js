@@ -21,7 +21,7 @@ export default function MovieCard({ movie, genres, rating }) {
     }
 
 
-    return <div className={styles.movie_card_wrapper} style={{ backgroundImage: `url('${movie.banner_url}')` }}>
+    return <div className={styles.movie_card_wrapper} style={{ backgroundImage: `url('http://localhost:5298/content/${movie.banner_url}')` }}>
         <div className={styles.movie_card_overlay}></div>
         <div className={styles.movie_card_details_pan}>
             <p className={styles.movie_card_title}>{movie.title.length > 15 ? movie.title.substring(0, 15) + " ..." : movie.title}</p>
@@ -39,7 +39,11 @@ export default function MovieCard({ movie, genres, rating }) {
             </div>
 
             <div className={styles.movie_card_play_button_wrapper}>
-                <a href='movie_pay_page/movie_slug'> <button className={styles.movie_card_play_buttn} type='button'>Play</button></a>
+                <a href={`/home/watch/${movie.slug}`}>
+                    <button className={styles.movie_card_play_buttn} type='button'>
+                        Play
+                    </button>
+                </a>
 
                 <button onClick={() => addMovieToWatchLater(movie.id, movie.title)} className={styles.movie_card_watch_later_button} type='submit'>
                     <img src='/icons/favourite.png' title='Add to watch later' />

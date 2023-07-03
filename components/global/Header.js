@@ -100,7 +100,7 @@ export default function Header() {
                         {isOpenMA && (
                             <div className={styles.dropdown_content}>
                                 <div style={{ marginTop: "10px" }}>
-                                    <a href=''>Profile</a> <br />
+                                    <a href='/home/friends'>Friends</a> <br />
                                 </div>
                                 <div style={{ marginTop: "10px" }}>
                                     <a href='/home/parental-control'>Parental Control</a> <br />
