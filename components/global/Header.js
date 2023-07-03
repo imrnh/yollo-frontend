@@ -103,9 +103,6 @@ export default function Header() {
                                     <a href='/home/profile'>Profile</a> <br />
                                 </div>
                                 <div style={{ marginTop: "10px" }}>
-                                    <a href='/home/friends'>Friends</a> <br />
-                                </div>
-                                <div style={{ marginTop: "10px" }}>
                                     <a href='/home/parental-control'>Parental Control</a> <br />
                                 </div>
                                 <div style={{ marginTop: "10px" }}>

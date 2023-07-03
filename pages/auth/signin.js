@@ -69,13 +69,13 @@ export default function SignUp() {
                     }
                 } else {
                     //throw error.
-                    updateError("ERROR" + response.message)
+                    updateError("ERROR: " + response.message)
                 }
             });
         });
 
         req.on('error', (error) => {
-            console.error('Error:', error.message);
+            console.error('Error: ', error.message);
         });
 
         req.write(data);
