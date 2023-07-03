@@ -105,7 +105,7 @@ export default function Watch({ slug, data }) {
                 <div style={{ height: "1px", width: "var(--global-display-width)", backgroundColor: "rgb(40,40,40)", marginTop: "100px" }}></div>
 
                 <div className={styles.review_section}>
-                    <p><b>Avg. Rating:</b> {rating_count} </p>
+                    <p><b>Avg. Rating:</b> {rating_count?.toFixed(1)} </p>
                     <p><b>Total Reviews:</b> {movie_reviews?.length ?? 0}</p>
                     <br />
                     <form onSubmit={reviewSubmitHandler} className={styles.review_form}>
@@ -123,13 +123,13 @@ export default function Watch({ slug, data }) {
                         <button type="submit" >Post</button> <br /><br /><br />
                     </form> <br /> <br /> <br />
 
-                    {console.log(movie_reviews)}
+                 
 
                     {Array.isArray(movie_reviews) && movie_reviews.length > 0 ? (
                         movie_reviews.map((review, index) => (
                             <div className={styles.review_render_p}>
-                                <p><b>{review.user_name}</b></p>
-                                <p  style={{ fontSize: "14px" }} key={index}>
+                                <p ><b style={{color: "rgb(200,200,200)"}}>{review.user_name}</b></p>
+                                <p  style={{ fontSize: "14px", color: "grey" }} key={index}>
                                     {review.review}
                                 </p></div>
                         ))

@@ -52,7 +52,7 @@ export default function Header() {
         router.push(path);
     }
 
-    const logoutHandler= () =>{
+    const logoutHandler = () => {
         Cookies.remove('token');
         Cookies.remove('role');
 
@@ -61,7 +61,7 @@ export default function Header() {
 
 
     return <main className={styles.navbar}>
-        <a href='/home/'><img className={styles.logo} src="/logo.png" /></a>
+        <a href='/home/'><img className={styles.logo} src="/logo-r.png" /></a>
 
         <div className={styles.nav_middle}>
             <div style={{ backgroundColor: "black" }} className={styles.search_bar}>
@@ -75,7 +75,7 @@ export default function Header() {
             <ul>
                 <li>
                     {parental_activated && (
-                        <div className={styles.parental_control_indicator} style={{color: "brown", marginTop: "8px", float: "left"}}><img style={{width: "13px", height: "13px", marginRight: "6px"}} src='/icons/padlock.png' />Parental control activated</div>
+                        <div className={styles.parental_control_indicator} style={{ color: "brown", marginTop: "8px", float: "left" }}><img style={{ width: "13px", height: "13px", marginRight: "6px" }} src='/icons/padlock.png' />Parental control activated</div>
                     )}
                 </li>
                 <li><button className={styles.nav_inner_mtv_buttns}><a href='/home/movies' style={{ color: 'gray' }}>Movies</a></button> </li>
@@ -100,6 +100,9 @@ export default function Header() {
                         {isOpenMA && (
                             <div className={styles.dropdown_content}>
                                 <div style={{ marginTop: "10px" }}>
+                                    <a href='/home/profile'>Profile</a> <br />
+                                </div>
+                                <div style={{ marginTop: "10px" }}>
                                     <a href='/home/friends'>Friends</a> <br />
                                 </div>
                                 <div style={{ marginTop: "10px" }}>
@@ -113,7 +116,7 @@ export default function Header() {
                                 </div>
 
                                 <div style={{ marginTop: "10px" }}>
-                                    <a onClick={logoutHandler} style={{color: "brown"}}>Logout</a> <br />
+                                    <a onClick={logoutHandler} style={{ color: "brown" }}>Logout</a> <br />
                                 </div>
 
                                 <div style={{ marginBottom: "20px" }}></div>

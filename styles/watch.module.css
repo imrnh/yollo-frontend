@@ -56,7 +56,7 @@
 }
 
 .review_section p:nth-child(2){
-    margin-left: 200px;
+    margin-left: 300px;
     margin-top: -24px;
 }
 
@@ -64,6 +64,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 30px;
 }
 
 .review_form input{
@@ -95,4 +96,5 @@
     padding-top: 10px;
     margin-top: 30px;
     font-size: 14px;
+
 }
