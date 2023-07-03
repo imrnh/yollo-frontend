@@ -69,6 +69,7 @@ export default function Profile() {
                             publishers={item.publishers}
                             genres={item.genres}
                             rating={item.rating}
+                            delete_path={"/home/deletemoviefromwatchlater?movie_id="}
                         />
                     ))}
                 </div>
@@ -82,7 +83,7 @@ export default function Profile() {
 
             <div className={styles.watch_later_wrapper}>
                 <div className={styles.watch_later_name_n_toggle_button}>
-                    <h1>Watch Later</h1>
+                    <h1>Watch History</h1>
                     <div style={{ color: "gray" }}>Visible to public &nbsp;&nbsp;
                         <input style={{ marginTop: "4px" }} type='checkbox' name="wl_public"
                             checked={whl_public[0]}
@@ -96,6 +97,7 @@ export default function Profile() {
                             publishers={item.publishers}
                             genres={item.genres}
                             rating={item.rating}
+                            delete_path={"/home/deletemoviefromwatchhistory?movie_id="}
                         />
                     ))}
                 </div>

@@ -45,6 +45,14 @@ export default function Watch({ slug, data }) {
 
     }, [slug]);
 
+    useEffect(() => {
+
+        //add the movie to watch history
+        getRequest("/home/addmovietowatchhistory?movie_id=" + movie_data?.id)
+            .then(res => console.log("movie added to watch history"))
+            .catch(err => alert("Error adding movie to watch history: " + err))
+    }, [movie_data])
+
 
     useEffect(() => {
         //read featured movie rating count.
@@ -123,13 +131,13 @@ export default function Watch({ slug, data }) {
                         <button type="submit" >Post</button> <br /><br /><br />
                     </form> <br /> <br /> <br />
 
-                 
+
 
                     {Array.isArray(movie_reviews) && movie_reviews.length > 0 ? (
                         movie_reviews.map((review, index) => (
                             <div className={styles.review_render_p}>
-                                <p ><b style={{color: "rgb(200,200,200)"}}>{review.user_name}</b></p>
-                                <p  style={{ fontSize: "14px", color: "grey" }} key={index}>
+                                <p ><b style={{ color: "rgb(200,200,200)" }}>{review.user_name}</b></p>
+                                <p style={{ fontSize: "14px", color: "grey" }} key={index}>
                                     {review.review}
                                 </p></div>
                         ))
